@@ -6,7 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class GuruLogin {
+public class LoginGuru {
 // Covers the Test case [ TC.G99.1 ]
 	
 	WebDriver localDriver; // driver object created 
@@ -14,10 +14,10 @@ public class GuruLogin {
  /* GuruLogin here is a constructor, takes driver as a parameter, 
 	and initiates the driver inside it */
 	
-	GuruLogin(WebDriver remoteDriver)
+	public LoginGuru(WebDriver remoteDriver)
 	{
 		localDriver = remoteDriver; // driver initiated
-		PageFactory.initElements(remoteDriver, this);	
+		PageFactory.initElements(remoteDriver,this);	
 	}
 	
 	@FindBy(name="uid") 
