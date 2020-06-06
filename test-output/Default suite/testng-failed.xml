@@ -6,7 +6,6 @@
       <class name="com.Guru99.testCases.TC_LoginGuru">
         <methods>
           <include name="loginTestGuru"/>
-          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.Guru99.testCases.TC_LoginGuru -->

@@ -1,0 +1,5 @@
+2020-06-07 04:40:10,851 [main] INFO AutomationPractice - URL is opened
+2020-06-07 04:40:10,980 [main] INFO AutomationPractice - User ID Entered
+2020-06-07 04:40:11,064 [main] INFO AutomationPractice - User Password Entered
+2020-06-07 04:40:12,604 [main] INFO AutomationPractice - Login Button Clicked
+2020-06-07 04:40:12,612 [main] INFO AutomationPractice - Login Test Passed

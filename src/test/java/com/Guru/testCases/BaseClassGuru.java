@@ -1,4 +1,4 @@
-package com.Guru99.testCases;
+package com.Guru.testCases;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -13,6 +13,7 @@ public class BaseClassGuru {
 	public String username ="mngr264437";
 	public String password ="nUpUpEv";
 	public static WebDriver driver; 
+	
 	public static Logger log;
 	
 	@BeforeClass
@@ -21,15 +22,17 @@ public class BaseClassGuru {
 	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
 	
-	log=Logger.getLogger("automationPractice");
-	PropertyConfigurator.configure("Log4j.properties");
+	log=Logger.getLogger("AutomationPractice");
+	PropertyConfigurator.configure("log4j.properties");
 	}
+	
 	
 	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();
 	}
+	
 	
 	
 }
