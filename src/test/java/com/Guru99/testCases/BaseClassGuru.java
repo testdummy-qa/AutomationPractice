@@ -1,5 +1,7 @@
 package com.Guru99.testCases;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -11,12 +13,16 @@ public class BaseClassGuru {
 	public String username ="mngr264437";
 	public String password ="nUpUpEv";
 	public static WebDriver driver; 
+	public static Logger logger;
 	
 	@BeforeClass
 	public void setup()
 	{
 	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
+	
+	logger=Logger.getLogger("automationPractice");
+	PropertyConfigurator.configure("Log4j.properties");
 	}
 	
 	@AfterClass
