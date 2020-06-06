@@ -10,28 +10,28 @@ public class TC_LoginGuru extends BaseClassGuru{
 	public void loginTestGuru()
 	{
 		driver.get(baseURL);        	// values from BaseClassGuru.java
-		logger.info("URL is opened");
+		log.info("URL is opened");
 		
 		LoginGuru logGuru = new LoginGuru(driver);
 		logGuru.setUserID(username);	// values from BaseClassGuru.java
-		logger.info("User ID Entered");
+		log.info("User ID Entered");
 		
 		logGuru.setUserPwd(password);	// values from BaseClassGuru.java
-		logger.info("User Password Entered");
+		log.info("User Password Entered");
 		
 		logGuru.clickLogin();
-		logger.info("Login Button Clicked");
+		log.info("Login Button Clicked");
 		
 // Verifying the page title upon successful login - to ensure test has passed
 		if(driver.getTitle().equals("Guru99 Bank Manager HomePage"))
 		{
 			Assert.assertTrue(true);
-			logger.info("Login Test Passed");
+			log.info("Login Test Passed");
 		}
 		else 
 		{
 			Assert.assertFalse(false);
-			logger.info("Login Test Failed");
+			log.info("Login Test Failed");
 		}
 				
 	}

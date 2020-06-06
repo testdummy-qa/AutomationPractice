@@ -13,7 +13,7 @@ public class BaseClassGuru {
 	public String username ="mngr264437";
 	public String password ="nUpUpEv";
 	public static WebDriver driver; 
-	public static Logger logger;
+	public static Logger log;
 	
 	@BeforeClass
 	public void setup()
@@ -21,7 +21,7 @@ public class BaseClassGuru {
 	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
 	
-	logger=Logger.getLogger("automationPractice");
+	log=Logger.getLogger("automationPractice");
 	PropertyConfigurator.configure("Log4j.properties");
 	}
 	
