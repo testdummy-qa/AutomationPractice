@@ -10,7 +10,7 @@ public class ReadConfig {
 	
 	public ReadConfig() // Created constructor 
 	{
-		File src = new File("./Configurations\\config.properties");
+		File src = new File("./Configurations\\config.properties"); //config file location in project
 		try {
 			FileInputStream fis = new FileInputStream(src);
 			prop = new Properties();
