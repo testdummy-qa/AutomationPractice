@@ -10,9 +10,7 @@ public class TC_LoginGuru extends BaseClassGuru{
 	@Test
 	public void loginTestGuru()
 	{
-		driver.get(baseURL);        	// values directly from BaseClassGuru.java
-		log.info("URL is opened");
-			
+					
 		LoginGuru logGuru = new LoginGuru(driver);
 		logGuru.setUserID(username);	// values directly from BaseClassGuru.java
 		log.info("User ID Entered");
