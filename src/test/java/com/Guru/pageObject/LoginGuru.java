@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginGuru {
-// Covers the Test case [ TC.G99.1 ]
+// Covers the Test case [ TC_LoginGuru ]
 	
 	WebDriver localDriver; // driver object created 
 	

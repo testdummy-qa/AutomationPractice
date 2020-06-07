@@ -13,7 +13,6 @@ public class BaseClassGuru {
 	public String username ="mngr264437";
 	public String password ="nUpUpEv";
 	public static WebDriver driver; 
-	
 	public static Logger log;
 	
 	@BeforeClass
@@ -25,7 +24,6 @@ public class BaseClassGuru {
 	log=Logger.getLogger("AutomationPractice");
 	PropertyConfigurator.configure("log4j.properties");
 	}
-	
 	
 	@AfterClass
 	public void tearDown()

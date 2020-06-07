@@ -34,10 +34,6 @@ public class TC_LoginGuru extends BaseClassGuru{
 			Assert.assertFalse(false);
 			log.info("Login Test Failed");
 		}
-		
-			
-			
-	
 				
 	}
 }
