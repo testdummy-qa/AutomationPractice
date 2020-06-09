@@ -2,16 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="AutomationPractice">
-	
 	<test name = "SeleniumJava Test" >
-
 		<parameter name="browser" value="firefox"/>
-		<classes>
-  			
-  				<class name= "com.Guru.testCases.TC_LoginGuru"/> 
-		
+		<classes>  		
+			<class name= "com.Guru.testCases.TC_LoginGuru"/> 		
 		</classes>
-		
-	</test>
-	
+	</test>	
 </suite>
