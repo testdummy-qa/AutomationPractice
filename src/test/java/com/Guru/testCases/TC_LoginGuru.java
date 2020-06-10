@@ -34,4 +34,13 @@ public class TC_LoginGuru extends BaseClassGuru{
 		}
 				
 	}
+	
+// I am creating this test as an example > to be removed if doesnt work	
+	public void createNewCustomer()
+	{
+		loginTestGuru();
+		
+		
+	}
+	
 }
