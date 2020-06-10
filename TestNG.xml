@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
+<<<<<<< HEAD
 <suite name="AutomationPractice">	
 	<test name = "SeleniumJava Test" >
 		
@@ -10,3 +11,13 @@
 		</classes>		
 	</test>	
 </suite>
+=======
+<suite name="AutomationPractice">
+	<test name = "SeleniumJava Test" >
+		<parameter name="browser" value="firefox"/>
+		<classes>  		
+			<class name= "com.Guru.testCases.TC_LoginGuru"/> 		
+		</classes>
+	</test>	
+</suite>
+>>>>>>> baa4eee43055dc189e36b92eda6c3d93c116e5c5
