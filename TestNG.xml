@@ -1,12 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="AutomationPractice">	
-	<test name = "SeleniumAutomationJava Test" >
-		
-		<parameter name="browser" value="chrome"/>
-			<classes>  			
-  				<class name= "com.Guru.testCases.TC_LoginGuru"/> 		
-		</classes>		
-	</test>	
+<suite name="AutomationPractice">
+	
+<!--  Need to work on Listeners before using this Tag. 
+      Need to check the issues with src\test\java\com\Guru\utilities\ReportingExtent.java file as well as 
+      AutomationPractice\extent-config.xml file where we tried to implement Listeners
+
+	
+<listeners>
+		<listener class-name="com.Guru.utilities.ReportingExtent"></listener>
+	</listeners>
+
+-->	
+	<test name="SeleniumAutomationJava Test">
+
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.Guru.testCases.TC_LoginGuru" />
+		</classes>
+	</test>
 </suite>
