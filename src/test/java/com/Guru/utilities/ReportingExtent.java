@@ -10,6 +10,8 @@ import java.util.Date;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -25,7 +27,8 @@ public class ReportingExtent extends TestListenerAdapter
 	public ExtentReports extent;
 	public ExtentTest logger;
 
-	public void onStart(ITestContext testContext) 
+	@BeforeTest
+	public void onStart() 
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.ss").format(new Date()); // time stamp
 		String repName = "Test-Report-"+ timeStamp +".html";
@@ -47,6 +50,12 @@ public class ReportingExtent extends TestListenerAdapter
 		htmlReporter.config().setTheme(Theme.DARK);			
 	}
 
+	@AfterTest
+	public void onFinish()
+	{
+		extent.flush();
+	}
+	
 	public void ontestSuccess(ITestResult tr)
 	{
 		logger = extent.createTest(tr.getName()); // create new entry in the report
@@ -58,7 +67,7 @@ public class ReportingExtent extends TestListenerAdapter
 		logger = extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); 
 
-		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
+		String screenshotPath=System.getProperty("user.dir")+"/Screenshots/"+tr.getName()+".png";
 
 		File f = new File(screenshotPath);
 
@@ -82,9 +91,6 @@ public class ReportingExtent extends TestListenerAdapter
 		logger.log(Status.SKIP, MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE)); 
 	}
 
-	public void onFinish(ITestResult tr)
-	{
-		extent.flush();
-	}
+	
 
 }
