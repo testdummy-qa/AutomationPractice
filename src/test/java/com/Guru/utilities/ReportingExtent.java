@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterTest;
@@ -56,13 +55,13 @@ public class ReportingExtent extends TestListenerAdapter
 		extent.flush();
 	}
 	
-	public void ontestSuccess(ITestResult tr)
+	public void onTestSuccess(ITestResult tr)
 	{
 		logger = extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.PASS, MarkupHelper.createLabel(tr.getName(),ExtentColor.GREEN)); //Send the passed information
 	}
 
-	public void ontestFailure(ITestResult tr)
+	public void onTestFailure(ITestResult tr)
 	{
 		logger = extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); 
@@ -85,7 +84,7 @@ public class ReportingExtent extends TestListenerAdapter
 
 	}
 
-	public void ontestSkipped(ITestResult tr)
+	public void onTestSkipped(ITestResult tr)
 	{
 		logger = extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.SKIP, MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE)); 

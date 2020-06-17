@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AutomationPractice" duration-ms="8977" started-at="2020-06-11T00:20:05Z" finished-at="2020-06-11T00:20:14Z">
+  <suite name="AutomationPractice" duration-ms="10341" started-at="2020-06-17T20:09:32Z" finished-at="2020-06-17T20:09:42Z">
     <groups>
     </groups>
-    <test name="SeleniumAutomationJava Test" duration-ms="8977" started-at="2020-06-11T00:20:05Z" finished-at="2020-06-11T00:20:14Z">
+    <test name="SeleniumAutomationJava Test" duration-ms="10341" started-at="2020-06-17T20:09:32Z" finished-at="2020-06-17T20:09:42Z">
       <class name="com.Guru.testCases.TC_LoginGuru">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Guru.testCases.TC_LoginGuru@146ba0ac]" name="setup" is-config="true" duration-ms="6336" started-at="2020-06-11T00:20:05Z" finished-at="2020-06-11T00:20:12Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Guru.testCases.TC_LoginGuru@146ba0ac]" name="setup" is-config="true" duration-ms="7629" started-at="2020-06-17T20:09:32Z" finished-at="2020-06-17T20:09:40Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTestGuru()[pri:0, instance:com.Guru.testCases.TC_LoginGuru@146ba0ac]" name="loginTestGuru" duration-ms="2006" started-at="2020-06-11T00:20:12Z" finished-at="2020-06-11T00:20:14Z">
+        <test-method status="PASS" signature="loginTestGuru()[pri:0, instance:com.Guru.testCases.TC_LoginGuru@146ba0ac]" name="loginTestGuru" duration-ms="2087" started-at="2020-06-17T20:09:40Z" finished-at="2020-06-17T20:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestGuru -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Guru.testCases.TC_LoginGuru@146ba0ac]" name="tearDown" is-config="true" duration-ms="621" started-at="2020-06-11T00:20:14Z" finished-at="2020-06-11T00:20:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Guru.testCases.TC_LoginGuru@146ba0ac]" name="tearDown" is-config="true" duration-ms="609" started-at="2020-06-17T20:09:42Z" finished-at="2020-06-17T20:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
