@@ -31,6 +31,12 @@ public class LoginGuru {
 	@FindBy(name="btnLogin")
 	@CacheLookup             // @CacheLookup is optional to use
 	WebElement LoginBtn;
+	
+	@FindBy(xpath="/html/body/div[3]/div/ul/li[15]/a")
+	@CacheLookup             // @CacheLookup is optional to use
+	WebElement LogoutBtn;
+	
+	
 		
 // Creating action methods for the above page elements
 	
@@ -49,4 +55,9 @@ public class LoginGuru {
 		LoginBtn.click();
 	}
 
+	public void clickLogout()
+	{
+		LogoutBtn.click();
+	}
+	
 } 

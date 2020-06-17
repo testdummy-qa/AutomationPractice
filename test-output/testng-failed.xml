@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationPractice]">
-  <test thread-count="5" name="SeleniumJava Test(failed)">
-    <parameter name="browser" value="ie"/>
+  <test thread-count="5" name="SeleniumAutomationJava Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Guru.testCases.TC_LoginGuru">
+      <class name="com.Guru.testCases.TC_LoginGuruDDT">
         <methods>
           <include name="setup"/>
-          <include name="loginTestGuru"/>
+          <include name="loginDDT"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Guru.testCases.TC_LoginGuru -->
+      </class> <!-- com.Guru.testCases.TC_LoginGuruDDT -->
     </classes>
-  </test> <!-- SeleniumJava Test(failed) -->
+  </test> <!-- SeleniumAutomationJava Test(failed) -->
 </suite> <!-- Failed suite [AutomationPractice] -->
