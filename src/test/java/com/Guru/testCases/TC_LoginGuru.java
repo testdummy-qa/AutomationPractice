@@ -1,5 +1,7 @@
 package com.Guru.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,7 +10,7 @@ import com.Guru.pageObject.LoginGuru;
 public class TC_LoginGuru extends BaseClassGuru{
 
 	@Test
-	public void loginTestGuru()
+	public void loginTestGuru() throws IOException
 	{
 					
 		LoginGuru logGuru = new LoginGuru(driver);
@@ -29,6 +31,7 @@ public class TC_LoginGuru extends BaseClassGuru{
 		}
 		else 
 		{
+			captureScreen(driver, "loginTestGuru"); //User defined method in base class-to capture screenshot
 			Assert.assertFalse(false);
 			log.info("Login Test Failed");
 		}
