@@ -5,15 +5,15 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.Guru.pageObject.LoginGuru;
+import com.Guru.pageObject.LoginPage;
 
-public class TC_LoginGuru extends BaseClassGuru{
+public class TC_Login extends BaseClassGuru{
 
 	@Test
 	public void loginTestGuru() throws IOException
 	{
 					
-		LoginGuru logGuru = new LoginGuru(driver);
+		LoginPage logGuru = new LoginPage(driver);
 		logGuru.setUserID(username);	// values directly from BaseClassGuru.java
 		log.info("User ID Entered");
 		

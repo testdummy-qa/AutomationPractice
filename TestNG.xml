@@ -19,7 +19,7 @@
 		<classes>
 		<!-- 	    <class name="com.Guru.testCases.TC_LoginGuru" />       -->	
 			
-			<class name="com.Guru.testCases.TC_LoginGuruDDT" />
+			<class name="com.Guru.testCases.TC_AddNewCustomer" />
 		</classes>
 	</test>
 </suite>

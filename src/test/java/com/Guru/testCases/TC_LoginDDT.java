@@ -6,17 +6,17 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.Guru.pageObject.LoginGuru;
+import com.Guru.pageObject.LoginPage;
 import com.Guru.utilities.XLUtils;
 
 import junit.framework.Assert;
 
-public class TC_LoginGuruDDT extends BaseClassGuru
+public class TC_LoginDDT extends BaseClassGuru
 {
 	@Test(dataProvider="LoginData")
 	public void loginDDT(String user, String pwd)
 	{
-		LoginGuru lp=new LoginGuru(driver);
+		LoginPage lp=new LoginPage(driver);
 		
 		lp.setUserID(user);
 		log.info("Username is provided");

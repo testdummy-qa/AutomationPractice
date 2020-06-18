@@ -4,13 +4,13 @@
   <test thread-count="5" name="SeleniumAutomationJava Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Guru.testCases.TC_LoginGuruDDT">
+      <class name="com.Guru.testCases.TC_AddNewCustomer">
         <methods>
           <include name="setup"/>
-          <include name="loginDDT"/>
+          <include name="addNewCustomer"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Guru.testCases.TC_LoginGuruDDT -->
+      </class> <!-- com.Guru.testCases.TC_AddNewCustomer -->
     </classes>
   </test> <!-- SeleniumAutomationJava Test(failed) -->
 </suite> <!-- Failed suite [AutomationPractice] -->
