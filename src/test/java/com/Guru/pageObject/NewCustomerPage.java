@@ -69,8 +69,8 @@ public class NewCustomerPage {
 	@CacheLookup              // @CacheLookup is optional to use
 	WebElement ResetBtn;
 	
-// Creating action methods for the above page elements
 	
+// Creating action methods for the above page elements
 	
 	public void clickNewCustomerTab()
 	{
@@ -137,7 +137,5 @@ public class NewCustomerPage {
 	public void clickReset()
 	{
 		ResetBtn.click();
-	}
-	
-	
+	}	
 }

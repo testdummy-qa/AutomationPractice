@@ -26,7 +26,7 @@ public class ReportingExtent extends TestListenerAdapter
 	public ExtentReports extent;
 	public ExtentTest logger;
 
-	@BeforeTest
+	//@BeforeTest
 	public void onStart() 
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.ss").format(new Date()); // time stamp
