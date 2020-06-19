@@ -6,19 +6,19 @@
  Need to work on Listeners before using this Tag. 
       Need to check the issues with src\test\java\com\Guru\utilities\ReportingExtent.java file as well as 
       AutomationPractice\extent-config.xml file where we tried to implement Listeners
-
+-->	
 
 <listeners>
 		<listener class-name="com.Guru.utilities.ReportingExtent"></listener>
 	</listeners>
 
--->	
+
 	<test name="SeleniumAutomationJava Test">
 
 		<parameter name="browser" value="chrome" />
 	<classes>
 	 	<class name="com.Guru.testCases.TC_Login" />  
-	    <class name="com.Guru.testCases.TC_AddNewCustomer" />  
+	    <class name="com.Guru.testCases.TC_AddNewCustomer" /> 
 	</classes>
 	</test>
 </suite>
