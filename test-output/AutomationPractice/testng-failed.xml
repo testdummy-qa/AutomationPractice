@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationPractice]">
   <listeners>
-    <listener class-name="com.Guru.utilities.Reporting"/>
+    <listener class-name="com.Guru.utilities.ReportingExtent"/>
   </listeners>
   <test thread-count="5" name="SeleniumAutomationJava Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Guru.testCases.TC_AddNewCustomer">
+      <class name="com.Guru.testCases.TC_LoginDDT">
         <methods>
           <include name="setup"/>
-          <include name="addNewCustomer"/>
+          <include name="loginDDT"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Guru.testCases.TC_AddNewCustomer -->
+      </class> <!-- com.Guru.testCases.TC_LoginDDT -->
     </classes>
   </test> <!-- SeleniumAutomationJava Test(failed) -->
 </suite> <!-- Failed suite [AutomationPractice] -->

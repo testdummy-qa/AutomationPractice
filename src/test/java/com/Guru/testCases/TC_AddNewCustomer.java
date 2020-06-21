@@ -17,7 +17,8 @@ public void addNewCustomer() throws InterruptedException, IOException
 {
 // Performing the Login test 	
 	LoginPage logGuru = new LoginPage(driver);
-	driver.manage().window().fullscreen();
+	driver.manage().window().maximize();
+	
 	logGuru.setUserID(username);	// values directly from BaseClassGuru.java
 	log.info("User ID Entered");
 	
@@ -31,8 +32,6 @@ public void addNewCustomer() throws InterruptedException, IOException
 	
 // 	Performing actions for adding new customer
 	NewCustomerPage NewCust = new NewCustomerPage(driver);
-	driver.manage().window().fullscreen();
-	
 	NewCust.clickNewCustomerTab();
 	
 	log.info("Providing Customer Information ............................. > ");
