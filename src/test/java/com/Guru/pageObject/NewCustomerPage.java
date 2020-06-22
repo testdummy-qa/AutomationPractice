@@ -69,6 +69,10 @@ public class NewCustomerPage {
 	@CacheLookup              // @CacheLookup is optional to use
 	WebElement ResetBtn;
 	
+	@FindBy(xpath="/html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]") 
+	@CacheLookup              // @CacheLookup is optional to use
+	WebElement CustId;
+	
 	
 // Creating action methods for the above page elements
 	
@@ -119,10 +123,18 @@ public class NewCustomerPage {
 		MobileNum.sendKeys(mobile);
 	}
 	
-	public void setEmail(String email)
+	public void setEmail(String email)  // Random generated email
 	{
 		Email.sendKeys(email);
 	}
+	
+	public void getEmail()  // Get the value of randomly generated email
+	{
+		String getEmail = Email.getText();
+		// Get the generated Customer ID 
+		System.out.println("Generated Customer email  is : " + getEmail);
+		}
+	
 	
 	public void setPassword(String pwd)
 	{
@@ -137,5 +149,12 @@ public class NewCustomerPage {
 	public void clickReset()
 	{
 		ResetBtn.click();
+	}	
+	
+	public void getCustId()
+	{
+		String CustomerID = CustId.getText();
+		// Get the generated Customer ID 
+		System.out.println("Generated Customer ID is : " + CustomerID);
 	}	
 }
