@@ -48,19 +48,24 @@ public void addNewCustomer() throws InterruptedException, IOException
 	NewCust.setMobileNum("9876543210");
 	
 	String email = randomemail()+"@gmail.com";
+// NewCust.getEmail(email);            To be implemented upon successfuly finishing this method
 	NewCust.setEmail(email);  // Random email is generated using the user defined randomemail() method
+	
 	
 	NewCust.setPassword("TestPassword");
 	NewCust.clickSubmit();
 	
 	Thread.sleep(3000);
 	
-// Validating the successful customer add > using "Customer registered succcessfully" screen 
+// Validating the successful customer add > using "Customer registered succcessfully" screen +
+// Capturing generated customer ID upon successful customer add	
+	
 	boolean testResult = driver.getPageSource().contains("Customer Registered Successfully!!!");
 	
 	if (testResult==true)
 	{
 		Assert.assertTrue(true);		
+		NewCust.getCustId();  // Get & print the generated customer id  
 		log.info("Test Passed ............................. > ");
 	}
 	
