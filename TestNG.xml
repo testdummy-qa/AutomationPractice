@@ -17,10 +17,11 @@
 
 		<parameter name="browser" value="chrome" />
 	<classes>
-	<class name="com.Guru.testCases.TC_Login" />  
-<!-- 	 <class name="com.Guru.testCases.TC_LoginDDT" /> -->	
+	
+	<!-- 	 <class name="com.Guru.testCases.TC_Login" />  -->	
 
- <!--     <class name="com.Guru.testCases.TC_AddNewCustomer" /> -->
+   <class name="com.Guru.testCases.TC_AddNewCustomer" /> 
+ 
 	</classes>
 	</test>
 </suite>

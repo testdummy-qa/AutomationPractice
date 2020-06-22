@@ -255,3 +255,32 @@
 2020-06-20 18:43:41,588 [main] INFO AutomationPractice - User Password Entered
 2020-06-20 18:43:46,816 [main] INFO AutomationPractice - Login Button Clicked
 2020-06-20 18:43:46,842 [main] INFO AutomationPractice - Login Test Passed
+2020-06-22 02:16:40,050 [main] INFO AutomationPractice - URL is opened
+2020-06-23 04:26:43,791 [main] INFO AutomationPractice - URL is opened
+2020-06-23 04:26:45,082 [main] INFO AutomationPractice - User ID Entered
+2020-06-23 04:26:45,163 [main] INFO AutomationPractice - User Password Entered
+2020-06-23 04:26:46,949 [main] INFO AutomationPractice - Login Button Clicked
+2020-06-23 04:26:50,838 [main] INFO AutomationPractice - Providing Customer Information ............................. > 
+2020-06-23 04:26:59,264 [main] INFO AutomationPractice - Test Passed ............................. > 
+2020-06-23 04:33:48,991 [main] INFO AutomationPractice - URL is opened
+2020-06-23 04:33:50,329 [main] INFO AutomationPractice - User ID Entered
+2020-06-23 04:33:50,409 [main] INFO AutomationPractice - User Password Entered
+2020-06-23 04:33:52,212 [main] INFO AutomationPractice - Login Button Clicked
+2020-06-23 04:33:56,138 [main] INFO AutomationPractice - Providing Customer Information ............................. > 
+2020-06-23 04:34:04,598 [main] INFO AutomationPractice - Test Passed ............................. > 
+2020-06-23 04:41:13,706 [main] INFO AutomationPractice - URL is opened
+2020-06-23 04:41:14,999 [main] INFO AutomationPractice - User ID Entered
+2020-06-23 04:41:15,079 [main] INFO AutomationPractice - User Password Entered
+2020-06-23 04:41:16,847 [main] INFO AutomationPractice - Login Button Clicked
+2020-06-23 04:41:20,698 [main] INFO AutomationPractice - Providing Customer Information ............................. > 
+2020-06-23 04:41:29,240 [main] INFO AutomationPractice - Test Passed ............................. > 
+2020-06-23 04:43:01,736 [main] INFO AutomationPractice - URL is opened
+2020-06-23 04:43:02,987 [main] INFO AutomationPractice - User ID Entered
+2020-06-23 04:43:03,086 [main] INFO AutomationPractice - User Password Entered
+2020-06-23 04:43:04,413 [main] INFO AutomationPractice - Login Button Clicked
+2020-06-23 04:44:03,087 [main] INFO AutomationPractice - URL is opened
+2020-06-23 04:44:04,357 [main] INFO AutomationPractice - User ID Entered
+2020-06-23 04:44:04,448 [main] INFO AutomationPractice - User Password Entered
+2020-06-23 04:44:05,954 [main] INFO AutomationPractice - Login Button Clicked
+2020-06-23 04:44:10,289 [main] INFO AutomationPractice - Providing Customer Information ............................. > 
+2020-06-23 04:44:18,762 [main] INFO AutomationPractice - Test Passed ............................. > 

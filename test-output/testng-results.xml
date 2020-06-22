@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AutomationPractice" duration-ms="18534" started-at="2020-06-20T13:13:29Z" finished-at="2020-06-20T13:13:47Z">
+  <suite name="AutomationPractice" duration-ms="22440" started-at="2020-06-22T23:13:56Z" finished-at="2020-06-22T23:14:19Z">
     <groups>
     </groups>
-    <test name="SeleniumAutomationJava Test" duration-ms="18534" started-at="2020-06-20T13:13:29Z" finished-at="2020-06-20T13:13:47Z">
-      <class name="com.Guru.testCases.TC_Login">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Guru.testCases.TC_Login@589838eb]" name="setup" is-config="true" duration-ms="11313" started-at="2020-06-20T13:13:29Z" finished-at="2020-06-20T13:13:41Z">
+    <test name="SeleniumAutomationJava Test" duration-ms="22440" started-at="2020-06-22T23:13:56Z" finished-at="2020-06-22T23:14:19Z">
+      <class name="com.Guru.testCases.TC_AddNewCustomer">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Guru.testCases.TC_AddNewCustomer@589838eb]" name="setup" is-config="true" duration-ms="5948" started-at="2020-06-22T23:13:57Z" finished-at="2020-06-22T23:14:03Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTestGuru()[pri:0, instance:com.Guru.testCases.TC_Login@589838eb]" name="loginTestGuru" duration-ms="5703" started-at="2020-06-20T13:13:41Z" finished-at="2020-06-20T13:13:46Z">
+        <test-method status="PASS" signature="addNewCustomer()[pri:0, instance:com.Guru.testCases.TC_AddNewCustomer@589838eb]" name="addNewCustomer" duration-ms="15667" started-at="2020-06-22T23:14:03Z" finished-at="2020-06-22T23:14:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTestGuru -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Guru.testCases.TC_Login@589838eb]" name="tearDown" is-config="true" duration-ms="1074" started-at="2020-06-20T13:13:46Z" finished-at="2020-06-20T13:13:47Z">
+        </test-method> <!-- addNewCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Guru.testCases.TC_AddNewCustomer@589838eb]" name="tearDown" is-config="true" duration-ms="642" started-at="2020-06-22T23:14:18Z" finished-at="2020-06-22T23:14:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Guru.testCases.TC_Login -->
+      </class> <!-- com.Guru.testCases.TC_AddNewCustomer -->
     </test> <!-- SeleniumAutomationJava Test -->
   </suite> <!-- AutomationPractice -->
 </testng-results>
